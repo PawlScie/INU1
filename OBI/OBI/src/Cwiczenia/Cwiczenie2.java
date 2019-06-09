@@ -1,0 +1,40 @@
+package Cwiczenia;
+
+public class Cwiczenie2 {
+	
+	public String przedmioty;
+	public int ects;
+	public int liczbaGodzin;
+	
+	public Cwiczenie2(String przedmioty, int ects, int liczbaGodzin) {
+		this.przedmioty = przedmioty;
+		this.ects =  ects;
+		this.liczbaGodzin =  liczbaGodzin;
+		
+	}
+	
+	public void print() {
+		System.out.println(przedmioty + " " + ects + " " + liczbaGodzin);
+	}
+	
+	public void setECTS (int e) {
+		ects = e ;
+	}
+	public void setLiczbaGodzin (int w) {
+		liczbaGodzin = w ;
+	}
+	
+	public String getPrzedmio() {
+		
+		return przedmioty;
+	
+	}
+	
+	public static void main(String[] args) {
+		Cwiczenie2 Matma = new Cwiczenie2("Matematyka", 3, 30);
+		Cwiczenie2 Fizyka = new Cwiczenie2("Fizyka", 3, 30);
+		
+		Matma.print();
+		Fizyka.print();
+	}
+}

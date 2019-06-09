@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="586.0" prefWidth="381.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Configuration">
+   <children>
+      <GridPane alignment="BOTTOM_CENTER" gridLinesVisible="true" layoutY="115.0" styleClass="regular">
+        <columnConstraints>
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="140.0" />
+            <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+          <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+            <RowConstraints vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="111.0" prefWidth="99.0" styleClass="up" text="AC" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="105.0" prefWidth="106.0" styleClass="up" text="\%" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="105.0" prefWidth="106.0" styleClass="up" text="+/-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="120.0" prefWidth="95.0" styleClass="regular" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="107.0" prefWidth="97.0" styleClass="right" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="104.0" prefWidth="108.0" styleClass="regular" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="109.0" prefWidth="107.0" styleClass="right" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="105.0" prefWidth="106.0" styleClass="right" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="105.0" prefWidth="106.0" styleClass="right" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="105.0" prefWidth="106.0" styleClass="regular" text="." GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#clickAction" prefHeight="105.0" prefWidth="106.0" styleClass="right" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#clickNumber" prefHeight="97.0" prefWidth="190.0" styleClass="regular" text="0" GridPane.columnSpan="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </GridPane>
+      <Label fx:id="txtAkcja" alignment="CENTER_RIGHT" layoutY="-4.0" prefHeight="124.0" prefWidth="381.0" styleClass="window" text="0" StackPane.alignment="TOP_RIGHT">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+   </children>
+</StackPane>

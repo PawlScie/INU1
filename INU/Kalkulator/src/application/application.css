@@ -1,0 +1,45 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.window{
+	-fx-background-color:  #666666;  /*ciemny szart*/
+}
+
+.digit{
+	-fx-font-size: 35px;
+	-fx-border-radius: 4;
+	-fx-font-family: 'Delicious';
+	-fx-border-color: green;
+	-fx-border-width: 2;
+}
+
+.regular{
+	-fx-font-size: 30px;
+	
+}
+
+.right {
+	-fx-text-fill: white ;
+	-fx-background-color: orange;
+	-fx-font-size: 30px;
+}
+
+.right:pressed{
+	-fx-background-color: orange;
+	-fx-border-width: 2;
+	-fx-border-color: #48a1ea;
+	-fx-border-radius: 4;
+	-fx-rotate: 2;
+}
+
+
+.up {
+	-fx-background-color: #28b619;
+	-fx-font-size: 30px;
+}
+
+.up:pressed{
+	-fx-background-color: #28b619;
+	-fx-border-width: 2;
+	-fx-border-radius: 4;
+	-fx-rotate: 2;
+}
